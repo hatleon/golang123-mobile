@@ -1,0 +1,5 @@
+*.log
+.idea
+*.swp
+node_modules
+npm-debug.log

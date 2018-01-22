@@ -1,0 +1,29 @@
+{
+  "name": "golang123-mobile",
+  "version": "0.0.1",
+  "description": "golang123 mobile project",
+  "author": "shen100 <liushen_shen@163.com>",
+  "private": true,
+  "scripts": {
+    "dev": "HOST=0.0.0.0 PORT=8024 nuxt",
+    "build": "nuxt build",
+    "start": "HOST=0.0.0.0 PORT=8024 nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "axios": "0.16.2",
+    "moment": "2.18.1",
+    "nuxt": "1.0.0-rc11",
+    "trim-html": "^0.1.9",
+    "mint-ui": "2.2.13"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}

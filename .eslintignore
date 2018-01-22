@@ -1,0 +1,5 @@
+.nuxt
+node_modules
+static
+utils/ab.js
+utils/bd.js
