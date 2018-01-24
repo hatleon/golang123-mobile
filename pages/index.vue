@@ -1,13 +1,34 @@
 <template>
     <div>
-        <div>hello</div>
+        <app-header></app-header>
+        <ul class="category-nav">
+            <li><a :class="{'category-select': !cate}" href="/">全部</a></li>
+            <li :id="c.id" v-for="c in categories"><a :class="{'category-select': c.id == cate}" :href="'/?cate=' + c.id">{{c.name}}</a></li>
+        </ul>
+        <div class="container">
+            <ul>
+                <li v-for="article in articles" class="article-item">
+                    <h3 class="article-title">{{article.name | entity2HTML}}</h3>
+                    <div class="article-property-box">
+                        <span class="article-category article-property">{{article.categories[0].name}}</span>
+                        <span class="article-property">{{article.user.name}}</span>
+                        <span  class="article-property">回复&nbsp;{{article.commentCount}}</span>
+                        <span  class="article-property">{{article.createdAt | getReplyTime}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
 <script>
     import request from '~/net/request'
+    import Header from '~/components/Header'
+    import dateTool from '~/utils/date'
+    import htmlUtil from '~/utils/html'
 
     export default {
+        middleware: 'userInfo',
         data () {
             return {
 
@@ -84,7 +105,13 @@
                 title: '首页'
             }
         },
-        middleware: 'userInfo'
+        filters: {
+            getReplyTime: dateTool.getReplyTime,
+            entity2HTML: htmlUtil.entity2HTML
+        },
+        components: {
+            'app-header': Header
+        }
     }
 </script>
 

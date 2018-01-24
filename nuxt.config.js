@@ -6,7 +6,7 @@ module.exports = {
     titleTemplate: '%s - Golang中文社区 - 和地鼠们分享你的知识、经验和见解',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' },
       { hid: 'description', name: 'description', content: 'golang123 - 一个专业的Go语言技术社区，帮助你寻找答案，分享知识。' },
       { name: 'keywords', content: "golang,go,go语言,golang社区,go社区,golang中国,go中国,golang中文社区,go中文社区,go语言中文网,golang123,社区"}
     ],

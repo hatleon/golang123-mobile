@@ -1,0 +1,48 @@
+a,blockquote,body,button,code,dd,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,iframe,img,input,label,li,object,ol,p,q,small,span,strong,table,tbody,td,th,tr,ul {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+ul,li,ol {
+    list-style: none;
+}
+
+body {
+    -webkit-font-smoothing: auto;
+    font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-size: 0;
+}
+
+.header {
+    width: 7.5rem;
+    height: 1rem;
+    position: fixed;
+    top: 0;
+}
+
+.header-bg {
+    position: absolute;
+    height: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    background: #0085F8 url(/images/header.png) no-repeat center;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    color: #fff;
+    margin-left: 0.28rem;
+    line-height: 1rem;
+    font-size: 22px;
+}
+
+.article-title {
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.article-property {
+    font-size: 10px;
+}
