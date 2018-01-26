@@ -42,11 +42,12 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+        config.resolve.alias['cube-ui'] = 'cube-ui/lib'
       }
     },
     vendor: ['axios', 'mint-ui']
   },
   plugins: [
-    { src: '~plugins/mintui.js', ssr: true }
+    { src: '~plugins/cube.js', ssr: true }
   ]
 }

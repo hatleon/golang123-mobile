@@ -14,6 +14,10 @@ const api = {
         url: url + '/articles',
         method: 'GET'
     },
+    getArticle: { // 获取文章信息
+        url: url + '/articles/info/:id',
+        method: 'GET'
+    },
     getTop10: { // 获取积分排名前10的用户
         url: url + '/user/score/top10',
         method: 'GET'

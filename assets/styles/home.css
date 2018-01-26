@@ -1,3 +1,7 @@
+html, body, #__nuxt {
+    height: 100%;
+}
+
 .category-nav {
     position: fixed;
     top: 52px;
@@ -23,8 +27,8 @@
     color: #4285f4!important;
 }
 
-.container {
-    margin-top: 88px;
+.article-list {
+    padding-top: 88px;
 }
 
 .article-item {
@@ -32,6 +36,10 @@
     margin-right: 0.28rem;
     padding-bottom: 0.28rem;
     border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+}
+
+.article-item-link {
+    text-decoration: none;
 }
 
 .article-title {
@@ -60,4 +68,10 @@
     color: #4285f4;
     padding: 0 0.02rem;
     line-height: 10px;
+}
+
+.articles-loading {
+    font-size: 14px;
+    text-align: center;
+    padding: 0.2rem 0;
 }

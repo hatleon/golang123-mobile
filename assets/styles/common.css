@@ -38,6 +38,55 @@ body {
     font-size: 22px;
 }
 
+.golang123-richtxt {
+    font-size: 16px;
+    color: #2f2f2f;
+    -webkit-font-smoothing: auto;
+}
+
+.golang123-richtxt h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eaecef;
+}
+
+.golang123-richtxt h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eaecef;
+}
+
+.golang123-richtxt h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.golang123-richtxt h4 {
+    font-size: 20px;
+}
+
+.golang123-richtxt h5 {
+    font-size: 18px;
+}
+
+.golang123-richtxt h6 {
+    font-size: 16px;
+}
+
+.dot {
+    background-color: #999;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-left: 6px;
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+}
+
 .article-title {
     font-size: 17px;
     line-height: 21px;

@@ -6,10 +6,6 @@
 </template>
 
 <script>
-    import flexible from '~/utils/flexible'
-    console.log(123)
-    flexible()
-
     export default {
         props: [
             'user'
